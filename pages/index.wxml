@@ -1,0 +1,50 @@
+<!--miniprogram/pages/index.wxml-->
+<view class="cu-card case bg-white">
+    <view class="cu-item">
+        <view class="bg-mauve radius18">
+            <view class="flex align-center">
+                <view class="margin-sm padding-sx">
+                    <text class="text-gray text-xl">状态</text>
+                </view>
+                <view class="margin-sm padding-sx">
+                    <text class="text-gray text-xl">{{status}}</text>
+                </view>
+            </view>
+            <view class="flex align-center">
+                <view class="margin-sm padding-sx">
+                    <text class="text-gray text-xl">时间</text>
+                </view>
+                <view class="margin-sm padding-sx">
+                    <text class="text-white text-xxl">{{dateTime}}</text>
+                </view>
+            </view>
+            <view>
+                <view class="flex align-center">
+                    <view class="flex-sub margin-sm padding-sx"><text class="text-gray text-xl">温度</text></view>
+                    <view class="flex-sub margin-sm padding-sx"><text class="text-gray text-xl">湿度</text></view>
+                </view>
+                <view class="flex align-center">
+                    <view class="flex-sub margin-sm padding-sx"><text class="text-white text-xsl">{{temperature}}°</text></view>
+                    <view class="flex-sub margin-sm padding-sx"><text class="text-white text-xsl">{{humidity}}%</text></view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="cu-item">
+        <view class="bg-white radius18">
+            <view class="flex align-center">
+                <view class="flex-sub margin-sm padding-sx">
+                    <p>
+                        <text class="text-gray">
+                            每隔2秒自动更新数据。如果长时间没有数据，请下拉刷新。
+                            \n使用Emqx免费试用版，最多能同时连接25个用户。如果显示"Connect Error", 请稍后再试
+                            
+                        </text>
+                    </p>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+
